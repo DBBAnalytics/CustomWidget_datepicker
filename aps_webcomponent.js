@@ -154,21 +154,6 @@
                 this.querySelector("#" + id).addEventListener("change", this._submit.bind(this)));
         }
 
-        async _checkForUpdates() {
-            try {
-                const contribution = await (await fetch("https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/datepicker.json")).json();
-                if (contribution.version > version) {
-                    const updateInfo = document.createElement("div");
-                    updateInfo.innerHTML = `
-                        <p class="info">
-                            A newer version of this Custom Widget is available.
-                            Please contact your system administrator
-                        </p>
-                    `;
-                    this.prepend(updateInfo);
-                }
-            } catch (error) { }
-        }
 
         _submit(e) {
             e.preventDefault();
