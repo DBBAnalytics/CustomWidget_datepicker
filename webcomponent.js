@@ -128,5 +128,5 @@
         }
     }
 
-    customElements.define('nkappler-date-picker', DatePicker);
+    customElements.define('date-picker', DatePicker);
 })();
