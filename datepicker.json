@@ -1,24 +1,24 @@
 {
 	"name": "Datepicker",
-	"description": "The Datepicker Custom Widget provides a sophisticated input field for date values and date ranges. The date formatting is customizable and a dark mode is provided.",
+	"description": "The Datepicker Custom Widget provides an input field for date values and date ranges. The date formatting is customizable and a dark mode is provided.",
 	"newInstancePrefix": "Datepicker",
 	"eula": "",
-	"vendor": "Nikolaj Kappler",
+	"vendor": "DBB IR SAC Dream Team",
 	"license": "",
-	"id": "nkappler.datepicker",
+	"id": "datepicker",
 	"version": "2.5.2",
-	"icon": "https://widgets.nkappler.de/datepicker/docs/calendarBlue.svg",
+	"icon": "https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/calendarBlack.svg",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "nkappler-date-picker",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.5.2/webcomponent.js",
+			"tag": "date-picker",
+			"url": "https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/webcomponent.js",
 			"integrity": "sha256-8jqUjaVpxPfY5hSd/lecwlXzpI4B8NZuXa5umRi08uE="
 		},
 		{
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.5.2/aps_webcomponent.js",
+			"url": "https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/aps_webcomponent.js",
 			"integrity": "sha256-vPO3b1+qfZ7G3/ddHj/dqZrpHQ32+a+YYL5eTxaRcc0="
 		}
 	],
@@ -67,7 +67,7 @@
 		},
 		"getDateVal": {
 			"returnType": "Date",
-			"description": "get the date. (start date if range selection is enabled, returns undefined when no date is selecteds)",
+			"description": "get the date. (start date if range selection is enabled, returns undefined when no date is selected)",
 			"parameters": []
 		},
 		"setDateVal": {
