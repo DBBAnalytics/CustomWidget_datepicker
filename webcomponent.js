@@ -10,15 +10,6 @@
             this.checkForUpdates();
         }
 
-        async checkForUpdates() {
-            try {
-                const contribution = await (await fetch("https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/datepicker.json")).json();
-                if (contribution.version > version) {
-                    console.log("");
-                }
-            } catch (error) { }
-        }
-
         init(skipChildrenCheck) {
             if (skipChildrenCheck !== true && this.children.length === 2) return; //constructor called during drag+drop
             if (!this.querySelector("link")) {
@@ -81,7 +72,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/{value ? "dark" : "light"}.css`);
+            this.querySelector("link").setAttribute("href", `https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/dark.css`);
         }
 
         set enablerange(value) {
