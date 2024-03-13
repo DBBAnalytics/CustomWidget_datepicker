@@ -11,7 +11,12 @@
         }
 
         async checkForUpdates() {
-
+            try {
+                const contribution = await (await fetch("https://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
+                if (contribution.version > version) {
+                    console.log("A newer version of the Datepicker Custom Widget is available. Please contact your system administrator");
+                }
+            } catch (error) { }
         }
 
         init(skipChildrenCheck) {
@@ -76,7 +81,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/${value ? "dark" : "light"}.css`);
+            this.querySelector("link").setAttribute("href", `https://widgets.nkappler.de/datepicker/releases/${version}/${value ? "dark" : "light"}.css`);
         }
 
         set enablerange(value) {
