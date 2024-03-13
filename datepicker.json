@@ -1,25 +1,25 @@
 {
 	"name": "Datepicker",
-	"description": "The Datepicker Custom Widget provides an input field for date values and date ranges. The date formatting is customizable and a dark mode is provided.",
+	"description": "Custom Widget with input field for date values and date ranges",
 	"newInstancePrefix": "Datepicker",
 	"eula": "",
-	"vendor": "DBB IR SAC Dream Team",
+	"vendor": "DBB IR SAC DreamTeam",
 	"license": "",
-	"id": "datepicker",
+	"id": "nkappler.datepicker",
 	"version": "2.5.2",
-	"icon": "https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/calendarBlack.svg",
+	"icon": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/calendarBlack.svg",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "date-picker",
+			"tag": "nkappler-date-picker",
 			"url": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/webcomponent.js",
-			"integrity": "sha256-+edALiOhtDiankBXR7zFR6J5b722BXkInfcvR9jGuU0="
+			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "datepicker-aps",
+			"tag": "nkappler-datepicker-aps",
 			"url": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/aps_webcomponent.js",
-			"integrity": "sha256-l8c4Gd7x6nw7mfK9XPc7wRT6+MMyEo/zIxUYYP6vBD4="
+			"ignoreIntegrity": true
 		}
 	],
 	"properties": {
@@ -67,7 +67,7 @@
 		},
 		"getDateVal": {
 			"returnType": "Date",
-			"description": "get the date. (start date if range selection is enabled, returns undefined when no date is selected)",
+			"description": "get the date. (start date if range selection is enabled, returns undefined when no date is selecteds)",
 			"parameters": []
 		},
 		"setDateVal": {
