@@ -19,7 +19,7 @@
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
 			"url": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/aps_webcomponent.js",
-			"integrity": "ha256-yQlAg5CVjKKgif4pLLoO2NcgZcwxn0mY3nChLTEEHz8="
+			"integrity": "sha256-yQlAg5CVjKKgif4pLLoO2NcgZcwxn0mY3nChLTEEHz8="
 		}
 	],
 	"properties": {
