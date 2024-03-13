@@ -13,13 +13,13 @@
 			"kind": "main",
 			"tag": "nkappler-date-picker",
 			"url": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/webcomponent.js",
-			"ignoreIntegrity": true
+			"integrity": "sha256-O9AJEOTZiQv4sVP1XjPqhYGKJBlDnwUKBcjt/ywAffc="
 		},
 		{
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
 			"url": "https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/aps_webcomponent.js",
-			"ignoreIntegrity": true
+			"integrity": "ha256-yQlAg5CVjKKgif4pLLoO2NcgZcwxn0mY3nChLTEEHz8="
 		}
 	],
 	"properties": {
