@@ -10,7 +10,9 @@
             this.checkForUpdates();
         }
 
+        async checkForUpdates() {
 
+        }
 
         init(skipChildrenCheck) {
             if (skipChildrenCheck !== true && this.children.length === 2) return; //constructor called during drag+drop
@@ -74,7 +76,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/dark.css`);
+            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/${value ? "dark" : "light"}.css`);
         }
 
         set enablerange(value) {
