@@ -1,7 +1,7 @@
 (function () {
     let version = "2.5.2";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/light.css"/>`;
+    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/light.css"/>`;
 
     class DatePicker extends HTMLElement {
         constructor() {
@@ -9,6 +9,8 @@
             this.init();
             this.checkForUpdates();
         }
+
+
 
         init(skipChildrenCheck) {
             if (skipChildrenCheck !== true && this.children.length === 2) return; //constructor called during drag+drop
@@ -72,7 +74,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://github.com/DBBAnalytics/CustomWidget_datepicker/blob/main/dark.css`);
+            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/DBBAnalytics/CustomWidget_datepicker/main/dark.css`);
         }
 
         set enablerange(value) {
@@ -119,5 +121,5 @@
         }
     }
 
-    customElements.define('date-picker', DatePicker);
+    customElements.define('nkappler-date-picker', DatePicker);
 })();

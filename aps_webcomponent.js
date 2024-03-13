@@ -3,37 +3,37 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <style>
-        datepicker-aps * {
+        nkappler-datepicker-aps * {
             box-sizing: border-box;
         }
-        datepicker-aps > p {
+        nkappler-datepicker-aps > p {
             margin: 16px 0 4px 0;
             line-height: 22px;
             font-size: 0.875rem;
             color: #999999;
         }
-        datepicker-aps > p:first-of-type {
+        nkappler-datepicker-aps > p:first-of-type {
             margin-top: 0;
         }
-        datepicker-aps > label {
+        nkappler-datepicker-aps > label {
             color: #333333 !important;
             font-size: 0.875rem;
         }
-        datepicker-aps select {
+        nkappler-datepicker-aps select {
             border: 1px solid rgb(191, 191, 191);
             padding: 3px 5px;
             width: calc(100% + 20px);
         }
-        datepicker-aps select:hover,
-        datepicker-aps select:focus {
+        nkappler-datepicker-aps select:hover,
+        nkappler-datepicker-aps select:focus {
             border: 1px solid #346187;
             cursor: pointer;
         }
-        datepicker-aps > div.select {
+        nkappler-datepicker-aps > div.select {
             position: relative;
             overflow: hidden;
         }
-        datepicker-aps > div.select::after {
+        nkappler-datepicker-aps > div.select::after {
             content: "\ue7ac";
             font-family: "fpa-icons";
             color: #346187;
@@ -47,26 +47,26 @@
             border-right: 1px solid rgb(191, 191, 191);
             pointer-events: none;
         }
-        datepicker-aps > div.select:focus-within::after,
-        datepicker-aps > div.select:hover::after {
+        nkappler-datepicker-aps > div.select:focus-within::after,
+        nkappler-datepicker-aps > div.select:hover::after {
             background-color: rgba(179, 179, 179, 0.5);
             border: 1px solid #346187;
             border-left-color: transparent;
         }
-        datepicker-aps .checkbox {
+        nkappler-datepicker-aps .checkbox {
             position: relative;
             display: flex;
             align-items: center;
             height: 22px;
         }
-        datepicker-aps .checkbox input {
+        nkappler-datepicker-aps .checkbox input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
             height: 0;
             width: 0;
         }
-        datepicker-aps .checkbox div.checkmark {
+        nkappler-datepicker-aps .checkbox div.checkmark {
             position: relative;
             height: 16px;
             width: 16px;
@@ -74,11 +74,11 @@
             border: 0.125rem solid #bfbfbf;
             margin-right: 0.5rem;
         }
-        datepicker-aps .checkbox div.checkmark:hover {
+        nkappler-datepicker-aps .checkbox div.checkmark:hover {
             cursor: pointer;
             border-color: #427cac;
         }
-        datepicker-aps .checkbox input:checked ~ div.checkmark:after {
+        nkappler-datepicker-aps .checkbox input:checked ~ div.checkmark:after {
             content: "\ue614";
             font-family: "fpa-icons";
             color: #427cac;
@@ -90,10 +90,10 @@
             align-items: center;
             justify-content: center;
         }
-        datepicker-aps .checkbox input:focus ~ div.checkmark {
+        nkappler-datepicker-aps .checkbox input:focus ~ div.checkmark {
             outline: 1px dotted #333;
         }
-        datepicker-aps p.info {
+        nkappler-datepicker-aps p.info {
             background-color: #e78c0744;
             border: 1px solid #e78c07;
             white-space: normal;
@@ -155,6 +155,7 @@
         }
 
 
+
         _submit(e) {
             e.preventDefault();
             this.dispatchEvent(new CustomEvent('propertiesChanged', {
@@ -214,5 +215,5 @@
         }
     }
 
-    customElements.define('datepicker-aps', DatePickerAps);
+    customElements.define('nkappler-datepicker-aps', DatePickerAps);
 })();
